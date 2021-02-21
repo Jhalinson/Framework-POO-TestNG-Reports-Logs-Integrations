@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mystore.qa.listeners.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="com.mystore.qa.tests.MyAccountPageTest">
+        <methods>
+          <include name="softAsserteUserAccount"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.MyAccountPageTest -->
+      <class name="com.mystore.qa.tests.MyStoreIndexPageTest">
+        <methods>
+          <include name="searchInvalidProduct"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.MyStoreIndexPageTest -->
+      <class name="com.mystore.qa.tests.AuthenticationPageTest">
+        <methods>
+          <include name="loginMyStoreApp"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.AuthenticationPageTest -->
+      <class name="com.mystore.qa.tests.OrderPageTest">
+        <methods>
+          <include name="deleteItemFromShoppingCart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.OrderPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Regression] -->
