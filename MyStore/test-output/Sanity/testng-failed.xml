@@ -6,11 +6,31 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
+      <class name="com.mystore.qa.tests.MyStoreIndexPageTest">
+        <methods>
+          <include name="validateMyStoreTitle"/>
+          <include name="searchProduct"/>
+          <include name="searchInvalidProduct"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateStoreInformationFooter"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.MyStoreIndexPageTest -->
       <class name="com.mystore.qa.tests.AuthenticationPageTest">
         <methods>
           <include name="loginMyStoreApp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.qa.tests.AuthenticationPageTest -->
+      <class name="com.mystore.qa.tests.OrderPageTest">
+        <methods>
+          <include name="deleteItemFromShoppingCart"/>
+          <include name="addItemToShoppingCart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.OrderPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Sanity] -->

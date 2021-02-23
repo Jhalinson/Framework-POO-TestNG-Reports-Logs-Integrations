@@ -1,25 +1,321 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="2" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-21T17:31:42Z" name="Default suite" finished-at="2021-02-21T17:31:59Z" duration-ms="17175">
+  <suite started-at="2021-02-23T13:33:41Z" name="Sanity" finished-at="2021-02-23T13:34:36Z" duration-ms="55711">
     <groups>
     </groups>
-    <test started-at="2021-02-21T17:31:42Z" name="Default test" finished-at="2021-02-21T17:31:59Z" duration-ms="17175">
+    <test started-at="2021-02-23T13:33:41Z" name="Test" finished-at="2021-02-23T13:34:36Z" duration-ms="55711">
       <class name="com.mystore.qa.tests.AuthenticationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@176b75f7]" started-at="2021-02-21T17:31:42Z" name="setUp" finished-at="2021-02-21T17:31:47Z" duration-ms="5545" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@6d366c9b]" started-at="2021-02-23T13:33:41Z" name="setUp" finished-at="2021-02-23T13:33:49Z" duration-ms="8674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginMyStoreApp()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@176b75f7]" started-at="2021-02-21T17:31:47Z" name="loginMyStoreApp" finished-at="2021-02-21T17:31:58Z" duration-ms="10384" status="PASS">
+        <test-method signature="loginMyStoreApp()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@6d366c9b]" started-at="2021-02-23T13:33:49Z" name="loginMyStoreApp" finished-at="2021-02-23T13:33:53Z" duration-ms="3822" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMyStoreApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@176b75f7]" started-at="2021-02-21T17:31:58Z" name="tearDown" finished-at="2021-02-21T17:31:59Z" duration-ms="783" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.AuthenticationPageTest@6d366c9b]" started-at="2021-02-23T13:33:54Z" name="tearDown" finished-at="2021-02-23T13:33:55Z" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mystore.qa.tests.AuthenticationPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.mystore.qa.tests.MyStoreIndexPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:33:41Z" name="setUp" finished-at="2021-02-23T13:33:49Z" duration-ms="8649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateMyStoreTitle()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:33:49Z" name="validateMyStoreTitle" finished-at="2021-02-23T13:33:50Z" duration-ms="572" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle(MyStoreIndexPageTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyStoreTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:33:53Z" name="tearDown" finished-at="2021-02-23T13:33:55Z" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:33:55Z" name="setUp" finished-at="2021-02-23T13:34:02Z" duration-ms="6543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateMyStoreLogo()[pri:1, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:02Z" name="validateMyStoreLogo" finished-at="2021-02-23T13:34:02Z" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyStoreLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:04Z" name="tearDown" finished-at="2021-02-23T13:34:05Z" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:05Z" name="setUp" finished-at="2021-02-23T13:34:10Z" duration-ms="4182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickSignInLink()[pri:2, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:10Z" name="clickSignInLink" finished-at="2021-02-23T13:34:12Z" duration-ms="2029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignInLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:13Z" name="tearDown" finished-at="2021-02-23T13:34:14Z" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:14Z" name="setUp" finished-at="2021-02-23T13:34:19Z" duration-ms="5183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchProduct()[pri:3, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:19Z" name="searchProduct" finished-at="2021-02-23T13:34:19Z" duration-ms="5" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct(MyStoreIndexPageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:21Z" name="tearDown" finished-at="2021-02-23T13:34:21Z" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:21Z" name="setUp" finished-at="2021-02-23T13:34:26Z" duration-ms="4753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchInvalidProduct()[pri:4, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:26Z" name="searchInvalidProduct" finished-at="2021-02-23T13:34:26Z" duration-ms="5" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct(MyStoreIndexPageTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:28Z" name="tearDown" finished-at="2021-02-23T13:34:29Z" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:29Z" name="setUp" finished-at="2021-02-23T13:34:34Z" duration-ms="5401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateStoreInformationFooter()[pri:5, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:34Z" name="validateStoreInformationFooter" finished-at="2021-02-23T13:34:35Z" duration-ms="431" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter(MyStoreIndexPageTest.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStoreInformationFooter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b]" started-at="2021-02-23T13:34:35Z" name="tearDown" finished-at="2021-02-23T13:34:36Z" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.qa.tests.MyStoreIndexPageTest -->
+      <class name="com.mystore.qa.tests.OrderPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:33:41Z" name="setUp" finished-at="2021-02-23T13:33:49Z" duration-ms="8844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addItemToShoppingCart()[pri:0, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:33:49Z" name="addItemToShoppingCart" finished-at="2021-02-23T13:33:53Z" duration-ms="3772" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart(OrderPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToShoppingCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:33:54Z" name="tearDown" finished-at="2021-02-23T13:33:55Z" duration-ms="882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:33:55Z" name="setUp" finished-at="2021-02-23T13:34:02Z" duration-ms="6256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteItemFromShoppingCart()[pri:1, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:34:02Z" name="deleteItemFromShoppingCart" finished-at="2021-02-23T13:34:04Z" duration-ms="2062" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+at com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart(OrderPageTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItemFromShoppingCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.tests.OrderPageTest@7651218e]" started-at="2021-02-23T13:34:05Z" name="tearDown" finished-at="2021-02-23T13:34:05Z" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.qa.tests.OrderPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Sanity -->
 </testng-results>

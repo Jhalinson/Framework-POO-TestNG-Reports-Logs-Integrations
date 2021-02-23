@@ -6,7 +6,7 @@ import com.mystore.qa.utils.ReaderPropertyFile;
 public class FrameworkConstants {
 	private final static String CONFIGPATH = System.getProperty("user.dir")
 			+ "/src/test/resources/config/config.properties";
-	private final static String EXCELPATH = "C:\\Users\\jhali\\OneDrive\\Escritorio\\Project\\src\\test\\resources\\excel\\testdata.xlsx";
+	private final static String EXCELPATH = ":\\Users\\jhali\\git\\Framework-POO-TestNG-Reports-Logs-Integrations\\MyStore\\src\\test\\resources\\excel\\testdata.xlsx";
 	private final static long PAGELOAD = 10;
 
 	public static long getPageload() {

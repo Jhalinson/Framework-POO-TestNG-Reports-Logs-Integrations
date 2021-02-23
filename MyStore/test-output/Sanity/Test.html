@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 20 22:52:14 BOT 2021</td>
+<td>Started on:</td><td>Tue Feb 23 09:33:41 BOT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>81 seconds (81581 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55711 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,29 +75,133 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp()'><b>loginMyStoreApp</b><br>Test class: com.mystore.qa.tests.AuthenticationPageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at com.mystore.qa.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:17)
-	at com.mystore.qa.basePage.BasePage.doClick(BasePage.java:29)
-	at com.mystore.qa.pages.MyStoreIndexPage.doClickSignInLink(MyStoreIndexPage.java:34)
-	at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:13)
+<td title='com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart()'><b>addItemToShoppingCart</b><br>Test class: com.mystore.qa.tests.OrderPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart(OrderPageTest.java:23)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70667296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace70667296'><pre>java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at com.mystore.qa.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:17)
-	at com.mystore.qa.basePage.BasePage.doClick(BasePage.java:29)
-	at com.mystore.qa.pages.MyStoreIndexPage.doClickSignInLink(MyStoreIndexPage.java:34)
-	at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:13)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1860180737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860180737'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart(OrderPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>3</td>
+<td>com.mystore.qa.tests.OrderPageTest@7651218e</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart()'><b>deleteItemFromShoppingCart</b><br>Test class: com.mystore.qa.tests.OrderPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart(OrderPageTest.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1612021107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1612021107'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart(OrderPageTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>2</td>
+<td>com.mystore.qa.tests.OrderPageTest@7651218e</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp()'><b>loginMyStoreApp</b><br>Test class: com.mystore.qa.tests.AuthenticationPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1115398055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1115398055'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>3</td>
+<td>com.mystore.qa.tests.AuthenticationPageTest@6d366c9b</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct()'><b>searchInvalidProduct</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct(MyStoreIndexPageTest.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619683475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619683475'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct(MyStoreIndexPageTest.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,7 +217,115 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </pre></div></td>
 <td>0</td>
-<td>com.mystore.qa.tests.AuthenticationPageTest@41294f8</td></tr>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct()'><b>searchProduct</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct(MyStoreIndexPageTest.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1259780076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1259780076'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct(MyStoreIndexPageTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle()'><b>validateMyStoreTitle</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle(MyStoreIndexPageTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace317148877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace317148877'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle(MyStoreIndexPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
+<tr>
+<td title='com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter()'><b>validateStoreInformationFooter</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter(MyStoreIndexPageTest.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1909708331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1909708331'><pre>java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter(MyStoreIndexPageTest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,45 +335,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart()'><b>addItemToShoppingCart</b><br>Test class: com.mystore.qa.tests.OrderPageTest</td>
-<td></td>
-<td>13</td>
-<td>com.mystore.qa.tests.OrderPageTest@2141a12</td></tr>
-<tr>
 <td title='com.mystore.qa.tests.MyStoreIndexPageTest.clickSignInLink()'><b>clickSignInLink</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
 <td></td>
-<td>1</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
-<tr>
-<td title='com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart()'><b>deleteItemFromShoppingCart</b><br>Test class: com.mystore.qa.tests.OrderPageTest</td>
-<td></td>
-<td>17</td>
-<td>com.mystore.qa.tests.OrderPageTest@2141a12</td></tr>
-<tr>
-<td title='com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct()'><b>searchInvalidProduct</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
-<tr>
-<td title='com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct()'><b>searchProduct</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
+<td>2</td>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
 <tr>
 <td title='com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreLogo()'><b>validateMyStoreLogo</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
-<tr>
-<td title='com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle()'><b>validateMyStoreTitle</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
-<tr>
-<td title='com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter()'><b>validateStoreInformationFooter</b><br>Test class: com.mystore.qa.tests.MyStoreIndexPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.mystore.qa.tests.MyStoreIndexPageTest@4196c360</td></tr>
+<td>com.mystore.qa.tests.MyStoreIndexPageTest@3185fa6b</td></tr>
 </table><p>
 </body>
 </html>

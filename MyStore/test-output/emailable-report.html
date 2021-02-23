@@ -8,11 +8,89 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17,175</td><td></td><td></td></tr>
+<tr><th colspan="7">Sanity</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">7</td><td class="num">55,711</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mystore.qa.tests.AuthenticationPageTest</td><td><a href="#m0">loginMyStoreApp</a></td><td rowspan="1">1613928707627</td><td rowspan="1">10384</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sanity</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mystore.qa.tests.AuthenticationPageTest</td><td><a href="#m0">loginMyStoreApp</a></td><td rowspan="1">1614087229937</td><td rowspan="1">3822</td></tr><tr class="failedodd"><td rowspan="4">com.mystore.qa.tests.MyStoreIndexPageTest</td><td><a href="#m1">searchInvalidProduct</a></td><td rowspan="1">1614087266588</td><td rowspan="1">5</td></tr><tr class="failedodd"><td><a href="#m2">searchProduct</a></td><td rowspan="1">1614087259255</td><td rowspan="1">5</td></tr><tr class="failedodd"><td><a href="#m3">validateMyStoreTitle</a></td><td rowspan="1">1614087229947</td><td rowspan="1">572</td></tr><tr class="failedodd"><td><a href="#m4">validateStoreInformationFooter</a></td><td rowspan="1">1614087274739</td><td rowspan="1">431</td></tr><tr class="failedeven"><td rowspan="2">com.mystore.qa.tests.OrderPageTest</td><td><a href="#m5">addItemToShoppingCart</a></td><td rowspan="1">1614087229930</td><td rowspan="1">3772</td></tr><tr class="failedeven"><td><a href="#m6">deleteItemFromShoppingCart</a></td><td rowspan="1">1614087242094</td><td rowspan="1">2062</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mystore.qa.tests.MyStoreIndexPageTest</td><td><a href="#m7">clickSignInLink</a></td><td rowspan="1">1614087250161</td><td rowspan="1">2029</td></tr><tr class="passedeven"><td><a href="#m8">validateMyStoreLogo</a></td><td rowspan="1">1614087242381</td><td rowspan="1">140</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.mystore.qa.tests.AuthenticationPageTest#loginMyStoreApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.mystore.qa.tests.AuthenticationPageTest#loginMyStoreApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.AuthenticationPageTest.loginMyStoreApp(AuthenticationPageTest.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mystore.qa.tests.MyStoreIndexPageTest#searchInvalidProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchInvalidProduct(MyStoreIndexPageTest.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.mystore.qa.tests.MyStoreIndexPageTest#searchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.searchProduct(MyStoreIndexPageTest.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.mystore.qa.tests.MyStoreIndexPageTest#validateMyStoreTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateMyStoreTitle(MyStoreIndexPageTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.mystore.qa.tests.MyStoreIndexPageTest#validateStoreInformationFooter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.MyStoreIndexPageTest.validateStoreInformationFooter(MyStoreIndexPageTest.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.mystore.qa.tests.OrderPageTest#addItemToShoppingCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.addItemToShoppingCart(OrderPageTest.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.mystore.qa.tests.OrderPageTest#deleteItemFromShoppingCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\jhali\OneDrive\Escritorio\Project\src\test\resources\excel\testdata.xlsx (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.mystore.qa.utils.ExcelUtils.getCellStringData(ExcelUtils.java:20)
+	at com.mystore.qa.tests.OrderPageTest.deleteItemFromShoppingCart(OrderPageTest.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.mystore.qa.tests.MyStoreIndexPageTest#clickSignInLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.mystore.qa.tests.MyStoreIndexPageTest#validateMyStoreLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Sanity]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mystore.qa.listeners.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
+      <class name="com.mystore.qa.tests.MyStoreIndexPageTest">
+        <methods>
+          <include name="validateMyStoreTitle"/>
+          <include name="searchProduct"/>
+          <include name="searchInvalidProduct"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateStoreInformationFooter"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.MyStoreIndexPageTest -->
       <class name="com.mystore.qa.tests.AuthenticationPageTest">
         <methods>
           <include name="loginMyStoreApp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.qa.tests.AuthenticationPageTest -->
+      <class name="com.mystore.qa.tests.OrderPageTest">
+        <methods>
+          <include name="deleteItemFromShoppingCart"/>
+          <include name="addItemToShoppingCart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.qa.tests.OrderPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Sanity] -->
