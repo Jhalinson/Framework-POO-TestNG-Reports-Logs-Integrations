@@ -7,12 +7,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                cd MyStore
-                echo ls
+              
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
+                
+                  cd '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main'
+                echo ls
+                echo 'Before cleaning script'
                 sh 'mvn clean'
                 echo 'Building..'
             }
