@@ -3,23 +3,22 @@ pipeline{
     stages{
       stage("clean"){
         steps{
-          mvn clean
+            echo 'Run clean tests here...'
     }
     stages{
       stage("build"){
         steps{
-          mvn compile
+          echo 'Run BUILD tests here...'
     }
     stages{
       stage("test"){
         steps{
-        mvn install
+          
+          echo 'Run TEST OR INSTALL tests here...'
     }
   
   }
 }
 }
 
-maven{
-  
-}
+
