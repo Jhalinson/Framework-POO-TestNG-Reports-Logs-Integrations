@@ -22,7 +22,7 @@ pipeline {
                 sh """
                 cd MyStore
                 """
-                
+                 sh "pwd"
 //                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
                 
                 
