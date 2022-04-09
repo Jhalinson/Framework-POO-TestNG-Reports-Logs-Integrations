@@ -43,7 +43,7 @@ pipeline {
 //                 sh '''
 //                 ls -al
 //                 '''
-                sh 'pw'
+                sh 'pwd'
                 echo 'Before cleaning script'
                 echo 'Building..'
             }
