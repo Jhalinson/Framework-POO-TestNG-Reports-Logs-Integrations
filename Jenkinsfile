@@ -12,10 +12,16 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
-                
+                   sh "pwd"
                 sh """
                 ls -al
             """
+                   sh "pwd"
+                sh """ls"""
+                   sh "pwd"
+                sh """
+                cd MyStore
+                """
                 
 //                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
                 
