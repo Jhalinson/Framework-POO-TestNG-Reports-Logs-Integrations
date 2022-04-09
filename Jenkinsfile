@@ -13,7 +13,7 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                 
-                  cd '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main'
+//                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
                 echo ls
                 echo 'Before cleaning script'
                 sh 'mvn clean'
