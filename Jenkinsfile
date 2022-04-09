@@ -4,14 +4,15 @@ pipeline {
         jdk 'JDK 16' 
         maven 'apache-maven'   
     }
-     dir("${env.WORKSPACE}/MyStore") 
+     
+    stages {
+        dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
                                 sh "pwd"
 
 
                           }
-    stages {
         stage('Build') {
             steps {
               
