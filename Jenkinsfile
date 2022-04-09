@@ -18,6 +18,7 @@ pipeline {
                     echo 'Running in Mystore after seetting dir up'
                     sh "pwd"
                                 }
+                sh 'mvn clean'
 //                 sh """
 //                 ls -al
 //             """
