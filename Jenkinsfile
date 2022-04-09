@@ -40,11 +40,11 @@ pipeline {
 //                 sh "pwd"
 //                 dir ()
                 
-                sh '''
-                ls -al
-                '''
+//                 sh '''
+//                 ls -al
+//                 '''
+                sh 'pw'
                 echo 'Before cleaning script'
-//                 sh 'mvn clean'
                 echo 'Building..'
             }
         }
