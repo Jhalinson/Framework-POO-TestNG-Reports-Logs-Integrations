@@ -14,7 +14,7 @@ pipeline {
                 ''' 
                    sh "pwd"
                 sh '''
-                echo ${env.WORKSPACE} 
+                echo '${env.WORKSPACE} 
                 
                 '''
                 
