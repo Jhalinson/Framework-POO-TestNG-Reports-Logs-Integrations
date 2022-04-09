@@ -13,7 +13,10 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                    sh "pwd"
-                echo '${env.WORKSPACE}
+                sh '''
+                echo ${env.WORKSPACE} 
+                
+                '''
                 
 //                 dir("MyStore") {
 //                     echo 'Running in Mystore after seetting dir up'
