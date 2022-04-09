@@ -16,7 +16,7 @@ pipeline {
 //                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
                 
                 
-                echo dir
+                dir
                 echo 'Before cleaning script'
                 sh 'mvn clean'
                 echo 'Building..'
