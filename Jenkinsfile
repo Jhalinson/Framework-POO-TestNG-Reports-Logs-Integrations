@@ -13,14 +13,14 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                    sh "pwd"
-                ${WORKSPACE}
+                echo ${env.WORKSPACE}
                 
 //                 dir("MyStore") {
 //                     echo 'Running in Mystore after seetting dir up'
 //                     sh "pwd"
 //                     sh 'mvn clean'
 
-                                }
+//                                 }
 //                 sh 'mvn clean'
 //                 sh """
 //                 ls -al
