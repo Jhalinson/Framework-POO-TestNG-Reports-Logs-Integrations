@@ -4,6 +4,13 @@ pipeline {
         jdk 'JDK 16' 
         maven 'apache-maven'   
     }
+     dir("${env.WORKSPACE}/MyStore") 
+                        {
+                            echo 'Running in Mystore after seetting dir up'
+                                sh "pwd"
+
+
+                          }
     stages {
         stage('Build') {
             steps {
@@ -13,14 +20,9 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                    sh "pwd"
+                                                    sh 'mvn clean'
             
-                dir("${env.WORKSPACE}/MyStore") 
-                        {
-                            echo 'Running in Mystore after seetting dir up'
-                                sh "pwd"
-                                    sh 'mvn clean'
-
-                          }
+               
 //                 sh 'mvn clean'
 //                 sh """
 //                 ls -al
