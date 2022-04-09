@@ -8,21 +8,22 @@ pipeline {
     stages {
         
         stage('Build') {
-            dir("${env.WORKSPACE}/MyStore") 
+            
+            steps {
+                dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
                                 sh "pwd"
-
+                    sh 'mvn clean'
 
                           }
-            steps {
               
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                    sh "pwd"
-                                                    sh 'mvn clean'
+                                                    
             
                
 //                 sh 'mvn clean'
@@ -54,7 +55,15 @@ pipeline {
         }
         stage('Test') {
             steps {
+                 dir("${env.WORKSPACE}/MyStore") 
+                        {
+                            echo 'Running in Mystore after seetting dir up'
+                                sh "pwd"
+                    sh 'mvn compile'
+
+                          }
                 echo 'Testing..'
+                
             }
         }
         stage('Deploy') {
