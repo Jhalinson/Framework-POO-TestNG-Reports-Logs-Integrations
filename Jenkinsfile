@@ -57,6 +57,13 @@ pipeline {
         }
         stage('Test') {
             steps {
+                dir("MyStore"){
+                sh "pwd"
+
+                    
+                    sh 'mvn clean install'
+                
+                }
                
                           
                 echo 'Testing..'
