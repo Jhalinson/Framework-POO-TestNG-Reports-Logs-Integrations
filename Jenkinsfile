@@ -17,7 +17,7 @@ pipeline {
                 dir("MyStore") {
                     echo 'Running in Mystore after seetting dir up'
                     sh "pwd"
-                    sh 'mvn clean'
+
                                 }
 //                 sh 'mvn clean'
 //                 sh """
@@ -37,6 +37,7 @@ pipeline {
 //                  sh '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main/Framework-POO-TestNG-Reports-Logs-Integrations/MyStore'
 //                 sh "pwd"
 //                 dir ()
+                sh 'mvn clean'
                 sh '''
                 ls -al
                 '''
