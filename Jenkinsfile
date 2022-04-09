@@ -1,7 +1,11 @@
 pipeline{
   agent any
+   def mvnHome
     stages{
       stage("clean"){
+        mvnHome = tool 'Maven'
+        
+        echo $mvnHome
         steps{
             echo 'Run clean tests here...'
     }
