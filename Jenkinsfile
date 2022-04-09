@@ -7,6 +7,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                cd MyStore
+                echo ls
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
