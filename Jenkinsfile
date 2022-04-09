@@ -37,6 +37,9 @@ pipeline {
 //                  sh '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main/Framework-POO-TestNG-Reports-Logs-Integrations/MyStore'
 //                 sh "pwd"
 //                 dir ()
+                sh '''
+                ls -al
+                '''
                 echo 'Before cleaning script'
 //                 sh 'mvn clean'
                 echo 'Building..'
