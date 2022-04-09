@@ -20,7 +20,7 @@ pipeline {
                 sh """ls"""
                    sh "pwd"
                 sh """
-                cd MyStore
+                cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main/MyStore
                 """
                  sh "pwd"
 //                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
