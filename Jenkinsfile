@@ -15,12 +15,12 @@ pipeline {
                    sh "pwd"
                 
                 dir("MyStore") {
-    sh "pwd"
-}
+                    echo 'Running in Mystore after seetting dir up'
+                    sh "pwd"
+                                }
 //                 sh """
 //                 ls -al
 //             """
-                   sh "pwd"
 //                 sh """ls"""
                 
 //                    sh "pwd"
