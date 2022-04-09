@@ -14,7 +14,7 @@ pipeline {
                 ''' 
                    sh "pwd"
             
-                dir(${env.WORKSPACE}/MyStore) 
+                dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
                                 sh "pwd"
