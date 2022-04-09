@@ -1,17 +1,30 @@
 pipeline{
+  
+      tools {
+        maven "MAVEN"
+        jdk "JDK"
+    }
+    stages {
+        stage('Initialize'){
+            steps{
+                echo "PATH = ${M2_HOME}/bin:${PATH}"
+                echo "M2_HOME = /opt/maven"
+            }
+        }
   agent any
-    stages{
+    stage{
       stage("clean"){
+        dir("/var/lib/jenkins/workspace/Framework-POO-TestNG-Reports-Logs-Integrations") 
         steps{
              sh 'mvn clean'
             echo 'Run clean tests here...'
     }
-    stages{
+    stage{
       stage("build"){
         steps{
           echo 'Run BUILD tests here...'
     }
-    stages{
+    stage{
       stage("test"){
         steps{
           sh 'mvn install'
