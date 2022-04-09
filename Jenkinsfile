@@ -6,14 +6,15 @@ pipeline {
     }
      
     stages {
-        dir("${env.WORKSPACE}/MyStore") 
+        
+        stage('Build') {
+            dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
                                 sh "pwd"
 
 
                           }
-        stage('Build') {
             steps {
               
                 sh '''
