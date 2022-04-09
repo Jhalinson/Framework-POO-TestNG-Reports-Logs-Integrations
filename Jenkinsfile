@@ -13,12 +13,16 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
                 
+                sh """
+                ls -al
+            """
+                
 //                   cd /Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main
                 
                 
-                sh "pwd"
-                 sh '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main/Framework-POO-TestNG-Reports-Logs-Integrations/MyStore'
-                sh "pwd"
+//                 sh "pwd"
+//                  sh '/Users/jhalinsonacosta/.jenkins/workspace/my-seleniumproject-pipeline_main/Framework-POO-TestNG-Reports-Logs-Integrations/MyStore'
+//                 sh "pwd"
 //                 dir ()
                 echo 'Before cleaning script'
 //                 sh 'mvn clean'
