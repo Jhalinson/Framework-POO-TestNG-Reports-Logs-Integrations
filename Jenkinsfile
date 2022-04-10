@@ -12,6 +12,7 @@ pipeline {
             steps {
                 
                 echo "WorkSpace {$WORKSPACE}"
+                echo "Build  {BUILD_ID}"
                 dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
