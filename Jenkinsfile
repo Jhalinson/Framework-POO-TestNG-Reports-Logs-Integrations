@@ -14,21 +14,22 @@ pipeline {
             steps {
                 
                 echo "WorkSpace {$WORKSPACE}"
-                echo "Build  {BUILD_ID}"
+//                 echo "Build  {BUILD_ID}"
                 dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
                                 sh "pwd"
+                             sh 'mvn -version'
                     sh 'mvn clean'
                             
                     sh 'mvn compile'
 
                           }
               
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                ''' 
+//                 sh '''
+//                     echo "PATH = ${PATH}"
+//                     echo "M2_HOME = ${M2_HOME}"
+//                 ''' 
                    sh "pwd"
                                                     
             
