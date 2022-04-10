@@ -11,7 +11,7 @@ pipeline {
             
             steps {
                 
-                echo "WorkSpace {$WORKSPACE""
+                echo "WorkSpace {$WORKSPACE}"
                 dir("${env.WORKSPACE}/MyStore") 
                         {
                             echo 'Running in Mystore after seetting dir up'
