@@ -1,4 +1,21 @@
+
+
+
 pipeline {
+  agent any
+  stages {
+    stage('Execute Selenium Tests from Github Repo Using Jenkins 2.0 Pipeline') {
+      steps {
+        echo 'Execute Tests'
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+        echo "Jenkins Workspace ${env.WORKSPACE}"
+        bat "mvn -f MyStore clean"
+        bat "mvn -f MyStore test -P testng"
+      }
+    } 
+  }
+}
+/*pipeline {
     agent {
         any {
             image 'maven:3.8.5-openjdk-17'
@@ -30,7 +47,7 @@ pipeline {
 //                     echo "PATH = ${PATH}"
 //                     echo "M2_HOME = ${M2_HOME}"
 //                 ''' 
-                   sh "pwd"
+                   sh "pwd"*/
                                                     
             
                
@@ -56,7 +73,7 @@ pipeline {
 //                 sh '''
 //                 ls -al
 //                 '''
-                sh 'pwd'
+               /* sh 'pwd'
                 echo 'Before cleaning script'
                 echo 'Building..'
             }
@@ -82,4 +99,4 @@ pipeline {
             }
         }
     }
-}
+}*/
